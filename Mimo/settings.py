@@ -30,7 +30,7 @@ SESSION_COOKIE_SECURE = True
 
 CSRF_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000',
+ALLOWED_HOSTS = ['127.0.0.1',
                  
                  ]
 
