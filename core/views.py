@@ -165,6 +165,10 @@ def follow(request):
     else:
         return redirect('/')
 
+@login_required(login_url='signin')
+def logout(request):
+    auth.logout(request)
+    return redirect('signin')
 
 @login_required(login_url='signin')
 def settings(request):
@@ -239,10 +243,6 @@ def signin(request):
             return redirect('signin')
     else:
         return render(request,'signin.html')
-    
-def logout(request):
-    auth.logout(request)
-    return redirect('signin')
 
 
 # Create your views here.

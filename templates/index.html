@@ -28,7 +28,7 @@
                         <!-- Logo -->
                         <div id="logo" class=" uk-hidden@s">
                             <a href="home.html">
-                                <b><h1 style="text-transform: uppercase;">Social Book</h1></b>
+                                <b><h1 style="text-transform: uppercase;">Mimo</h1></b>
                             </a>
                         </div>
 
@@ -74,9 +74,9 @@
                                 <form action="upload" method="POST" enctype="multipart/form-data">
                                     {% csrf_token %}
                                     <div>
-                                        <input type="file" name="image_upload">
+                                        <input type="file" name="image_upload" accept="image/png, image/gif, image/jpeg" required>
                                         {% comment %} <a href="#" class="button soft-warning small"> Choose file</a> {% endcomment %}
-                                        <textarea name="caption" id="caption" placeholder="caption"></textarea>
+                                        <textarea name="caption" id="caption" placeholder="caption" required></textarea>
                                         <br>
                                         <button type="submit" class="button bg-blue-700">Upload</button>
                                     </div>
