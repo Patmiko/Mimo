@@ -2,8 +2,6 @@ core/async.py
 core/forms.py
 */__pycache__
 */homebox
-media/
-static/
 main
 
 # Byte-compiled / optimized / DLL files
