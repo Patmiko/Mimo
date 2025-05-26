@@ -1,1 +1,1 @@
-Simple image hosting website
+Simple image hosting website. Created Using Django Framework
